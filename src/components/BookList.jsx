@@ -12,15 +12,6 @@ export default class BookList extends Component {
                     </div>
                 </div>
             )
-            // <ul className="list-group">
-            //     {books.map(x =>
-                
-            //     // <> 
-            //     //     <li className="list-group-item" key={x.id}>Author: {x.author}</li>
-            //     //     <li className="list-group-item" key={x.id}>Title: {x.title}</li>
-            //     // </>
-            //     )}
-            // </ul>
         )
     }
 }

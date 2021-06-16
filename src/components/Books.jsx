@@ -6,10 +6,8 @@ import BookList from './BookList.jsx'
 
 export default class Books extends Component {
     handleSubmit = payload => {
-        payload.preventDefault()
         const { addBooks, selectedSection } = this.props
         addBooks({...payload, sectionId: selectedSection})
-        console.log(payload);
     }
     render () {
         const { books } = this.props
