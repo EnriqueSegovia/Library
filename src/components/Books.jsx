@@ -1,21 +1,15 @@
-import React, { Component } from 'react'
-
-//Components
 import BookForm from './BookForm'
 import BookList from './BookList.jsx'
 
-export default class Books extends Component {
-    handleSubmit = payload => {
-        const { addBooks, selectedSection } = this.props
+export default function Books ({ addBooks, selectedSection, books }) {
+
+    const handleSubmit = (payload) => {
         addBooks({...payload, sectionId: selectedSection})
     }
-    render () {
-        const { books } = this.props
         return (
             <>
-                <BookForm onSubmit={this.handleSubmit}/>
+                <BookForm onSubmit={handleSubmit}/>
                 <BookList books={books} />
             </>
         )
     }
-}
