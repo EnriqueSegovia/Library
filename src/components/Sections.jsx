@@ -1,5 +1,5 @@
 import SectionForm from './SectionForm'
-import SectionList from './SectionList.jsx'
+import SectionList from './SectionList'
 
 export default function Sections ({  sections, addSection, selectSection }) {
     return (

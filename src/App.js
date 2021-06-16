@@ -1,13 +1,5 @@
-import React, { Component } from 'react'
-import './App.css';
 import { connect } from 'react-redux'
 import { reset } from 'redux-form'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 //Components
 import Sections from './components/Sections';
@@ -15,19 +7,15 @@ import { addSection, selectSection } from './reducers/Sections'
 import { addBooks } from './reducers/Books'
 import Books from './components/Books';
 
-class App extends Component {
-  render () {
-    const { 
-      sections, 
-      addSection, 
-      books, 
-      addBooks, 
-      selectSection, 
-      selected, 
-    } = this.props
+function App ({ 
+  sections, 
+  addSection, 
+  books, 
+  addBooks, 
+  selectSection, 
+  selected,}) {
 
     return (
-      <Router>
         <div className="container">
           <h1>Library</h1>
           <Sections 
@@ -38,9 +26,7 @@ class App extends Component {
           <hr />
           <Books addBooks={addBooks} selectedSection={selected} books={books}/>
         </div>
-      </Router>
   );
-}
 }
 
 const mapStateToProps = state => {

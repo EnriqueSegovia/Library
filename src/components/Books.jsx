@@ -1,5 +1,5 @@
 import BookForm from './BookForm'
-import BookList from './BookList.jsx'
+import BookList from './BookList'
 
 export default function Books ({ addBooks, selectedSection, books }) {
 

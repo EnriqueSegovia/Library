@@ -35,6 +35,7 @@ export default function reducer(state = initialState, action) {
             return {
                 ...state,
                 selected: action.payload,
+                selectedStyle: [{backgroundColor: "#3f454e", color: "#fff", borderColor: "#1a1e21"}]
             }
     
         default:
