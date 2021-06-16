@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the app, you can add Section, and in each section you can add a book/magazine with Title and Author Name, if you switch between the sections you can see the books/magazines that you added before.
+
+- Clone repository
+- Eject NPM Install in the project directory for install the packages
+- Eject YARN start for a local deploy.
 
 ## Available Scripts
 
